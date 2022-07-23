@@ -1,0 +1,17 @@
+.Scores{
+    color: #fff;
+    height: 400px;
+    width: 300px;
+    background-color: #000;
+    text-align: center;
+    border-radius: 20px;
+}
+.Scores__title{
+    font-size: 50px;
+    font-weight: 300;
+}
+.Scores__text{
+    font-size: 25px;
+    font-weight: 300;
+    padding-top: 20px;
+}

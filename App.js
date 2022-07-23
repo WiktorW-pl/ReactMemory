@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import AppLogo from "./components/AppLogo"
+import Cards from './components/game/Cards'
+
+import './App.css'
 
 function App() {
+
+  const [isEntered, setIsEntered] = useState(false);
+
+  const enterTheGame = () =>{
+    setIsEntered(true);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      {!isEntered && <AppLogo />}
+      {!isEntered && <button onClick={enterTheGame} className='App-Logo__btn'>Start new game</button>}
+      {isEntered && <Cards />}
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.Game-screen{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(4, 150px);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-right: 40px;
+
+}
+
+.Card{
+    background-color: #000;
+    border-radius: 20px;
+}

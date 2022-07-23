@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,300;0,600;1,400&display=swap');
+
+.App-Wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.App-Logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    transform: translateX(-50px);
+}
+
+.App-Logo__img{
+    width: 200px;
+    margin: 50px;
+}
+
+.App-Logo__title{
+    font-size: 80px;
+}
